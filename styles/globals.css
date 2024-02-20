@@ -1,0 +1,101 @@
+html,
+body {
+  overflow: auto;
+}
+
+body {
+  color: black;
+  overflow: auto;
+  background-color: #efb700;
+  background-image: url("../public/images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+  background-size: cover;
+}
+nav {
+  text-align: center;
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+li {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+header > h1 > a {
+  color: black;
+  text-decoration: none;
+}
+.portfolio-image {
+  border-radius: 20px;
+  margin-right: 20px;
+  float: left;
+  height: 100%;
+  border-style: solid;
+  border-color: black;
+}
+.icon-image {
+  padding-right: 30px;
+}
+.card {
+  display: flex;
+  width: 50vw;
+  position: relative;
+  text-wrap: wrap;
+  align-items: center;
+  border: 3px, solid, black;
+  padding: 24px;
+  background: rgba(182, 178, 178, 0.8);
+  border-radius: 20px;
+}
+.typewriter-h1 {
+  white-space: nowrap;
+}
+
+.about-text > p {
+  font-size: 23px;
+}
+.container {
+  padding: 2px 16px;
+}
+.about-me {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.navbar > ul > li > a:hover {
+  color: white;
+}
+.error-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  font-size: 50px;
+}
+.navbar > ul > li > a {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
