@@ -2,7 +2,6 @@ html,
 body {
   overflow: auto;
 }
-
 body {
   color: black;
   overflow: auto;
@@ -37,8 +36,7 @@ header > h1 > a {
 .portfolio-image {
   border-radius: 20px;
   margin-right: 20px;
-  float: left;
-  height: 100%;
+  margin-bottom: 20px;
   border-style: solid;
   border-color: black;
 }
@@ -46,14 +44,15 @@ header > h1 > a {
   padding-right: 30px;
 }
 .card {
+  height: 30vh;
   display: flex;
-  width: 50vw;
+  width: 65vw;
   position: relative;
   text-wrap: wrap;
   align-items: center;
-  border: 3px, solid, black;
+  border: 1px solid white;
   padding: 24px;
-  background: rgba(182, 178, 178, 0.8);
+  background: rgba(214, 210, 210, 0.8);
   border-radius: 20px;
 }
 .typewriter-h1 {
