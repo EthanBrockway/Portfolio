@@ -3,8 +3,8 @@ import profilePic from "../../public/images/EthanPFP.png"
 import projectStyles from "./projects.module.css"
 import { useState } from "react"
 import classNames from "classnames"
-import { motion } from "framer-motion"
-
+import { motion, useDragControls } from "framer-motion"
+import githubImg from "../../public/images/github.png"
 export default function Projects() {
   const [activeCard, setActiveCard] = useState<number>()
 
@@ -14,7 +14,10 @@ export default function Projects() {
       <motion.div
         layout
         draggable="false"
-        transition={{ layout: { duration: 1, type: "spring" } }}
+        transition={{
+          layout: { duration: 1, type: "spring" },
+        }}
+        animate={{ x: 0 }}
         className={classNames(
           projectStyles.card,
           activeCard === 0
@@ -25,46 +28,102 @@ export default function Projects() {
           setActiveCard(0)
         }}
         style={{
-          backgroundImage: "url(images/flappybard.png)",
-          backgroundSize: "100% 100%",
+          boxShadow: "0.7rem 0.7rem 0 rgb(29, 28, 28)",
+          backgroundImage: "url(/images/flappybard.png)",
           backgroundColor: "#31a7b4",
         }}
       >
-        <motion.div layout className={projectStyles.title}>
+        <div className={projectStyles.title}>
           {activeCard === 0 && (
-            <motion.div className={projectStyles.list}>
-              <motion.ul>
-                <motion.li>Express</motion.li>
-                <motion.li>C#</motion.li>
-                <motion.li>JavaScript</motion.li>
-                <motion.li>Unity</motion.li>
-                <motion.li>MongoDB</motion.li>
-              </motion.ul>
-            </motion.div>
+            <div className={projectStyles.list}>
+              <ul>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.5, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  Express
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.7, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  C#
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.9, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  JavaScript
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.1, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  Unity
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.3, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  MongoDB
+                </motion.li>
+              </ul>
+            </div>
           )}
-
-          <motion.h1 layout>Flarpy Bard</motion.h1>
+          <h1>Flarpy Bard</h1>
           {activeCard === 0 && (
             <div className={projectStyles.links}>
               <motion.a
-                layout
                 href="https://github.com/EthanBrockway"
-                whileHover={{ scale: 1.2 }}
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+
+                  opacity: 1,
+                  transition: { delay: 0.8, type: "springy" },
+                }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
               >
                 <Image
                   className="icon"
-                  src={profilePic}
+                  src={githubImg}
                   width="35"
                   height="35"
                   alt="Picture of Developer"
                 />
               </motion.a>
-              <motion.a
-                layout
-                transition={{ duration: 0.5 }}
-                href="https://github.com/EthanBrockway"
-              >
+              <a href="https://github.com/EthanBrockway">
                 <Image
                   className="icon"
                   src={profilePic}
@@ -72,12 +131,12 @@ export default function Projects() {
                   height="35"
                   alt="Picture of Developer"
                 />
-              </motion.a>
+              </a>
             </div>
           )}
-        </motion.div>
+        </div>
         {activeCard === 0 && (
-          <p>
+          <p style={{ color: "white", fontSize: "26px" }}>
             Challenging myself to learn unity and C# I created simple online
             game where you tap to fly a bird through multiple pipes. Flying
             through more pipes before failing allows you to unlock new skins,
@@ -85,11 +144,15 @@ export default function Projects() {
           </p>
         )}
       </motion.div>
+
       {/* Salon portfolio */}
       <motion.div
         layout
         draggable="false"
-        transition={{ layout: { duration: 1, type: "spring" } }}
+        transition={{
+          layout: { duration: 1, type: "spring" },
+        }}
+        animate={{ x: 0 }}
         className={classNames(
           projectStyles.card,
           activeCard === 1
@@ -102,29 +165,87 @@ export default function Projects() {
         style={{
           boxShadow: "0.7rem 0.7rem 0 rgb(29, 28, 28)",
           backgroundImage: "url(/images/salon.png)",
-          backgroundSize: "100% 100%",
           backgroundColor: "#f3d4c3",
         }}
       >
-        <motion.div layout className={projectStyles.title}>
+        <div className={projectStyles.title}>
           {activeCard === 1 && (
-            <motion.div className={projectStyles.list}>
-              <motion.ul>
-                <motion.li>Express</motion.li>
-                <motion.li>C#</motion.li>
-                <motion.li>JavaScript</motion.li>
-                <motion.li>Unity</motion.li>
-                <motion.li>MongoDB</motion.li>
-              </motion.ul>
-            </motion.div>
+            <div className={projectStyles.list}>
+              <ul>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.5, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  Express
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.7, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  C#
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.9, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  JavaScript
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.1, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  Unity
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.3, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  MongoDB
+                </motion.li>
+              </ul>
+            </div>
           )}
           <h1>Salon Portfolio</h1>
           {activeCard === 1 && (
-            <motion.div className={projectStyles.links}>
+            <div className={projectStyles.links}>
               <motion.a
-                layout
-                transition={{ hidden: { x: 0 } }}
                 href="https://github.com/EthanBrockway"
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  opacity: 1,
+                  transition: { delay: 1, type: "springy" },
+                }}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
               >
@@ -136,12 +257,7 @@ export default function Projects() {
                   alt="Picture of Developer"
                 />
               </motion.a>
-
-              <motion.a
-                layout
-                transition={{ duration: 0.5 }}
-                href="https://github.com/EthanBrockway"
-              >
+              <a href="https://github.com/EthanBrockway">
                 <Image
                   className="icon"
                   src={profilePic}
@@ -149,12 +265,12 @@ export default function Projects() {
                   height="35"
                   alt="Picture of Developer"
                 />
-              </motion.a>
-            </motion.div>
+              </a>
+            </div>
           )}
-        </motion.div>
+        </div>
         {activeCard === 1 && (
-          <p>
+          <p style={{ color: "white", fontSize: "26px" }}>
             A website I built for my beautiful girlfriend to showcase her and
             her friends favorite hairstyles. It also has a brief description of
             each girls hobbies and specialties. This website was a fun one to
@@ -195,7 +311,7 @@ export default function Projects() {
                   animate={{
                     y: 0,
                     opacity: 1,
-                    transition: { delay: 0.8, type: "spring" },
+                    transition: { delay: 0.5, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
@@ -207,7 +323,7 @@ export default function Projects() {
                   animate={{
                     y: 0,
                     opacity: 1,
-                    transition: { delay: 1, type: "spring" },
+                    transition: { delay: 0.7, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
@@ -219,7 +335,7 @@ export default function Projects() {
                   animate={{
                     y: 0,
                     opacity: 1,
-                    transition: { delay: 1.2, type: "spring" },
+                    transition: { delay: 0.9, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
@@ -231,7 +347,7 @@ export default function Projects() {
                   animate={{
                     y: 0,
                     opacity: 1,
-                    transition: { delay: 1.4, type: "spring" },
+                    transition: { delay: 1.1, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
@@ -243,7 +359,7 @@ export default function Projects() {
                   animate={{
                     y: 0,
                     opacity: 1,
-                    transition: { delay: 1.6, type: "spring" },
+                    transition: { delay: 1.3, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
@@ -298,9 +414,12 @@ export default function Projects() {
       </motion.div>
       {/* Inventory manager */}
       <motion.div
-        draggable="false"
-        transition={{ layout: { duration: 0.6, type: "spring" } }}
         layout
+        draggable="false"
+        transition={{
+          layout: { duration: 1, type: "spring" },
+        }}
+        animate={{ x: 0 }}
         className={classNames(
           projectStyles.card,
           activeCard === 3
@@ -315,47 +434,115 @@ export default function Projects() {
           backgroundColor: "orange",
         }}
       >
-        <motion.div
-          className={projectStyles.title}
-          style={{ fontSize: "25px" }}
-        >
+        <div className={projectStyles.title}>
           {activeCard === 3 && (
-            <motion.div className={projectStyles.list}>
-              <motion.ul>
-                <motion.li>Express</motion.li>
-                <motion.li>C#</motion.li>
-                <motion.li>JavaScript</motion.li>
-                <motion.li>Unity</motion.li>
-                <motion.li>MongoDB</motion.li>
-              </motion.ul>
-            </motion.div>
-          )}
-          <h1>Inventory Manager</h1>
-          {activeCard === 3 && (
-            <div className={projectStyles.links}>
-              <motion.a layout href="https://github.com/EthanBrockway">
-                <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
-                  alt="Picture of Developer"
-                />
-              </motion.a>
-              <motion.a layout href="https://github.com/EthanBrockway">
-                <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
-                  alt="Picture of Developer"
-                />
-              </motion.a>
+            <div className={projectStyles.list}>
+              <ul>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.5, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  Express
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.7, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  C#
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.9, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  JavaScript
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.1, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  Unity
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.3, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  MongoDB
+                </motion.li>
+              </ul>
             </div>
           )}
-        </motion.div>
+          <h1>Show Selector</h1>
+          {activeCard === 3 && (
+            <div className={projectStyles.links}>
+              <motion.a
+                href="https://github.com/EthanBrockway"
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  opacity: 1,
+                  transition: { delay: 1, type: "springy" },
+                }}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
+              >
+                <Image
+                  className="icon"
+                  src={profilePic}
+                  width="35"
+                  height="35"
+                  alt="Picture of Developer"
+                />
+              </motion.a>
+              <a href="https://github.com/EthanBrockway">
+                <Image
+                  className="icon"
+                  src={profilePic}
+                  width="35"
+                  height="35"
+                  alt="Picture of Developer"
+                />
+              </a>
+            </div>
+          )}
+        </div>
         {activeCard === 3 && (
-          <p style={{ fontSize: "50px" }}>WORK IN PROGRESS</p>
+          <p style={{ color: "white", fontSize: "26px" }}>
+            My final project for my software development bootcamp! We were
+            challenged to work with a group of 3 other developers to create a
+            fullstack program using an api of our choice. Unfortunatly the other
+            people in the group ended up not doing the project and it is
+            currently only an impressive graphQL backend coded by me!
+          </p>
         )}
       </motion.div>
     </section>
