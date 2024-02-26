@@ -1,13 +1,13 @@
 html,
 body {
-  overflow: auto;
+  overflow: hidden;
 }
 body {
   color: black;
-  overflow: auto;
   background-color: #efb700;
   background-image: url("../public/images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
   background-size: cover;
+  height: 100vh;
 }
 nav {
   text-align: center;
@@ -44,6 +44,8 @@ header > h1 > a {
   padding-right: 30px;
 }
 .card {
+  margin: auto;
+  color: black;
   height: 30vh;
   display: flex;
   width: 65vw;
@@ -59,19 +61,13 @@ header > h1 > a {
   white-space: nowrap;
 }
 
-.about-text > p {
+.card > p {
   font-size: 23px;
 }
 .container {
   padding: 2px 16px;
 }
-.about-me {
-  margin-top: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-}
+
 
 .navbar > ul > li > a:hover {
   color: white;

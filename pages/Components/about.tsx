@@ -13,7 +13,7 @@ import expressIcon from "../../public/images/express.png"
 import Typewriter from "typewriter-effect"
 export default function AboutSection() {
   return (
-    <div className="about-me">
+    
       <div className="card">
         <Image
           className="portfolio-image"
@@ -129,7 +129,7 @@ export default function AboutSection() {
             />
           </div>
         </div>
-      </div>
+      
     </div>
   )
 }
