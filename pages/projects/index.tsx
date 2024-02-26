@@ -3,7 +3,7 @@ import profilePic from "../../public/images/EthanPFP.png"
 import projectStyles from "./projects.module.css"
 import { useState } from "react"
 import classNames from "classnames"
-import { motion} from "framer-motion"
+import { motion } from "framer-motion"
 import githubImg from "../../public/images/github.png"
 export default function Projects() {
   const [activeCard, setActiveCard] = useState<number>()

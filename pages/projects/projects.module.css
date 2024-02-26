@@ -19,7 +19,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
-  height: 150px;
+  min-height: 150px;
 }
 
 .title {
@@ -28,7 +28,6 @@
   font-size: 35px;
   color: white;
   user-select: none;
-  width: auto;
   justify-content: center;
   align-content: center;
 }
@@ -60,22 +59,20 @@
 .links {
   display: flex;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 40px;
+  right: 50px;
   width: 100px;
   align-items: center;
   justify-content: space-between;
 }
 .cardActive .title ul {
-  right: 420px;
-  padding: 0;
-  position: relative;
-  display: block;
   text-align: center;
+  padding-left: 0;
 }
 .list {
+  left: 0;
   position: absolute;
-  width: 25%;
+  max-width: 18vw;
   display: flex;
 }
 .title ul li {
@@ -94,4 +91,23 @@
 }
 .cardIsInactive {
   grid-column: span 2;
+}
+@media screen and (max-width: 1650px) {
+  .title ul li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .title ul lI {
+    font-size: 10px;
+  }
+  .list {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .title {
+    font-size: 25px;
+  }
 }

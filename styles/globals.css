@@ -1,6 +1,6 @@
 html,
 body {
-  overflow: hidden;
+  overflow: auto;
 }
 body {
   color: black;
@@ -22,7 +22,7 @@ header {
   color: black;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  max-height: 50px;
 }
 li {
   display: inline-flex;
@@ -42,6 +42,10 @@ header > h1 > a {
 }
 .icon-image {
   padding-right: 30px;
+}
+.container {
+  display: flex;
+  height: 100vh;
 }
 .card {
   margin: auto;
@@ -64,10 +68,6 @@ header > h1 > a {
 .card > p {
   font-size: 23px;
 }
-.container {
-  padding: 2px 16px;
-}
-
 
 .navbar > ul > li > a:hover {
   color: white;
@@ -83,14 +83,4 @@ header > h1 > a {
   font-weight: 500;
   color: black;
   text-decoration: none;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-weight: 500;
-  color: black;
-  text-align: center;
 }
