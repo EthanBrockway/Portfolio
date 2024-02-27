@@ -47,13 +47,16 @@ header > h1 > a {
 .container {
   display: flex;
   height: 100vh;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  justify-content: center;
+  min-width: 500px;
 }
 .card {
   margin: auto;
   color: black;
-  height: 30vh;
+  max-height: 250px;
   display: flex;
-  width: 65vw;
   position: relative;
   text-wrap: wrap;
   align-items: center;
@@ -63,6 +66,7 @@ header > h1 > a {
   border-radius: 20px;
 }
 .typewriter-h1 {
+  font-size: 2em;
   white-space: nowrap;
 }
 
