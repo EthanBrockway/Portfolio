@@ -28,7 +28,6 @@
   color: white;
   user-select: none;
   justify-content: center;
-  align-content: center;
   align-items: center;
 }
 
@@ -92,23 +91,33 @@
 .cardIsInactive {
   grid-column: span 2;
 }
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1750px) {
   .title ul li {
     font-size: 15px;
   }
+  .section {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1350px) {
+  .title ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 250px;
+  }
+
   .title ul lI {
     font-size: 10px;
   }
   .list {
     width: 15vw;
+    left: 20px;
   }
-}
-@media screen and (max-width: 1350px) {
   .section {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
     margin-right: 10rem;
     margin-left: 10rem;
   }
@@ -118,12 +127,15 @@
   .cardActive {
     grid-column: span 2;
   }
-}
-@media screen and (max-width: 1120px) {
-  .card {
-    grid-column: span 2;
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .title a {
+    height: 40px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .cardIsInactive {
     grid-column: span 1;
@@ -146,6 +158,39 @@
     height: 30px;
   }
   .list {
-    min-width: 200px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .cardActive {
+    grid-column: span 1;
+  }
+  .cardIsInactive {
+    grid-column: span 1;
+  }
+  .list {
+    display: none;
+  }
+  .title h1 {
+    flex: 3;
+    align-items: center;
+    text-align: center;
+  }
+  .links {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+  .icon {
+    margin: 2px;
   }
 }

@@ -34,10 +34,10 @@ header > h1 > a {
   text-decoration: none;
 }
 .portfolio-image {
-  margin-top: 20px;
+  margin-top: 1px;
   border-radius: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   border-style: solid;
   border-color: black;
 }
@@ -50,12 +50,10 @@ header > h1 > a {
   margin-right: 10rem;
   margin-left: 10rem;
   justify-content: center;
-  min-width: 500px;
 }
 .card {
   margin: auto;
   color: black;
-  max-height: 250px;
   display: flex;
   position: relative;
   text-wrap: wrap;
@@ -66,15 +64,13 @@ header > h1 > a {
   border-radius: 20px;
 }
 .typewriter-h1 {
-  font-size: 2em;
+  font-size: 40px;
   white-space: nowrap;
 }
-
-.card > p {
-  font-size: 23px;
+p {
+  font-size: 25px;
 }
-
-.navbar > ul > li > a:hover {
+a:hover {
   color: white;
 }
 .error-div {
@@ -84,8 +80,20 @@ header > h1 > a {
   margin-top: 300px;
   font-size: 50px;
 }
-.navbar > ul > li > a {
+.icons {
+  position: relative;
+  bottom: 0px;
+}
+a {
   font-weight: 500;
   color: black;
   text-decoration: none;
+}
+@media screen and (max-width: 1080px) {
+  p {
+    font-size: 18px;
+  }
+  .typewriter-h1 {
+    font-size: 30px;
+  }
 }

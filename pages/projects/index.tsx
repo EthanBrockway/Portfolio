@@ -131,7 +131,7 @@ export default function Projects() {
                   y: 0,
 
                   opacity: 1,
-                  transition: { delay: 0.8, type: "springy" },
+                  transition: { delay: 1.2, type: "springy" },
                 }}
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
@@ -276,7 +276,7 @@ export default function Projects() {
                   y: 0,
 
                   opacity: 1,
-                  transition: { delay: 0.8, type: "springy" },
+                  transition: { delay: 1.2, type: "springy" },
                 }}
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
@@ -421,7 +421,7 @@ export default function Projects() {
                   y: 0,
 
                   opacity: 1,
-                  transition: { delay: 0.8, type: "springy" },
+                  transition: { delay: 1.2, type: "springy" },
                 }}
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
@@ -566,7 +566,7 @@ export default function Projects() {
                   y: 0,
 
                   opacity: 1,
-                  transition: { delay: 0.8, type: "springy" },
+                  transition: { delay: 1.2, type: "springy" },
                 }}
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
