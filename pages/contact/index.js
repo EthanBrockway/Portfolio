@@ -41,7 +41,7 @@ export default function Contact() {
             required
             type="text"
             id={contactStyles.inputField}
-            placeholder="email"
+            placeholder="Email"
             title="Please enter valid email address."
             pattern="^[\w\-]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
             name="email"

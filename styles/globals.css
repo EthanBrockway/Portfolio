@@ -3,6 +3,7 @@ body {
   overflow: auto;
 }
 body {
+  overflow: hidden;
   color: black;
   background-color: #efb700;
   background-image: url("../public/images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
@@ -47,8 +48,8 @@ header > h1 > a {
 .container {
   display: flex;
   height: 100vh;
-  margin-right: 18rem;
-  margin-left: 18rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
   justify-content: center;
 }
 .card {
