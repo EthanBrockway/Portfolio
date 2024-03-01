@@ -11,7 +11,7 @@ import graphqlIcon from "../../public/images/graphql.png"
 import typescriptIcon from "../../public/images/typescript.png"
 import expressIcon from "../../public/images/express.png"
 import Typewriter from "typewriter-effect"
-import motion from "framer-motion"
+
 export default function AboutSection() {
   return (
     <div className="container">

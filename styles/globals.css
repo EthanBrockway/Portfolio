@@ -47,8 +47,8 @@ header > h1 > a {
 .container {
   display: flex;
   height: 100vh;
-  margin-right: 10rem;
-  margin-left: 10rem;
+  margin-right: 18rem;
+  margin-left: 18rem;
   justify-content: center;
 }
 .card {

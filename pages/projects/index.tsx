@@ -1,5 +1,4 @@
 import Image from "next/image"
-import profilePic from "../../public/images/EthanPFP.png"
 import projectStyles from "./projects.module.css"
 import { useState } from "react"
 import classNames from "classnames"
