@@ -1,10 +1,10 @@
 import Image from "next/image"
-import profilePic from "../../public/images/EthanPFP.png"
 import projectStyles from "./projects.module.css"
 import { useState } from "react"
 import classNames from "classnames"
-import { motion} from "framer-motion"
+import { motion } from "framer-motion"
 import githubImg from "../../public/images/github.png"
+import websiteIcon from "../../public/images/world-wide-web.png"
 export default function Projects() {
   const [activeCard, setActiveCard] = useState<number>()
 
@@ -104,7 +104,7 @@ export default function Projects() {
           {activeCard === 0 && (
             <div className={projectStyles.links}>
               <motion.a
-                href="https://github.com/EthanBrockway"
+                href="https://github.com/EthanBrockway/FlarpyBard"
                 initial={{ y: 60, opacity: 0 }}
                 animate={{
                   y: 0,
@@ -116,22 +116,33 @@ export default function Projects() {
                 whileTap={{ scale: 0.8 }}
               >
                 <Image
-                  className="icon"
+                  className={projectStyles.icon}
                   src={githubImg}
-                  width="35"
-                  height="35"
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
               </motion.a>
-              <a href="https://github.com/EthanBrockway">
+              <motion.a
+                href="https://github.com/EthanBrockway/FlarpyBard"
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+
+                  opacity: 1,
+                  transition: { delay: 1.2, type: "springy" },
+                }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.8 }}
+              >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={websiteIcon}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
-              </a>
+              </motion.a>
             </div>
           )}
         </div>
@@ -239,33 +250,44 @@ export default function Projects() {
           {activeCard === 1 && (
             <div className={projectStyles.links}>
               <motion.a
-                href="https://github.com/EthanBrockway"
+                href="https://github.com/EthanBrockway/luxe-salon"
                 initial={{ y: 60, opacity: 0 }}
                 animate={{
                   y: 0,
                   opacity: 1,
-                  transition: { delay: 1, type: "springy" },
+                  transition: { delay: 0.8, type: "springy" },
                 }}
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
               >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={githubImg}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
               </motion.a>
-              <a href="https://github.com/EthanBrockway">
+              <motion.a
+                href="https://meghanandcarasbeauty.com/"
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+
+                  opacity: 1,
+                  transition: { delay: 1.2, type: "springy" },
+                }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.8 }}
+              >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={websiteIcon}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
-              </a>
+              </motion.a>
             </div>
           )}
         </div>
@@ -372,33 +394,45 @@ export default function Projects() {
           {activeCard === 2 && (
             <div className={projectStyles.links}>
               <motion.a
-                href="https://github.com/EthanBrockway"
+                href="https://github.com/EthanBrockway/show-selector"
                 initial={{ y: 60, opacity: 0 }}
                 animate={{
                   y: 0,
                   opacity: 1,
-                  transition: { delay: 1, type: "springy" },
+                  transition: { delay: 0.8, type: "springy" },
                 }}
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
               >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={githubImg}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
               </motion.a>
-              <a href="https://github.com/EthanBrockway">
+              <motion.a
+                href="https://github.com/EthanBrockway/show-selector"
+                style={{ backgroundColor: "white", borderRadius: "10px" }}
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+
+                  opacity: 1,
+                  transition: { delay: 1.2, type: "springy" },
+                }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.8 }}
+              >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={websiteIcon}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
-              </a>
+              </motion.a>
             </div>
           )}
         </div>
@@ -501,7 +535,7 @@ export default function Projects() {
               </ul>
             </div>
           )}
-          <h1>Show Selector</h1>
+          <h1 style={{ fontSize: "40px" }}>Inventory Manager</h1>
           {activeCard === 3 && (
             <div className={projectStyles.links}>
               <motion.a
@@ -509,40 +543,46 @@ export default function Projects() {
                 initial={{ y: 60, opacity: 0 }}
                 animate={{
                   y: 0,
+
                   opacity: 1,
-                  transition: { delay: 1, type: "springy" },
+                  transition: { delay: 0.8, type: "springy" },
                 }}
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
                 whileTap={{ scale: 0.8 }}
               >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={githubImg}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
               </motion.a>
-              <a href="https://github.com/EthanBrockway">
+              <motion.a
+                href="https://github.com/EthanBrockway"
+                initial={{ y: 60, opacity: 0 }}
+                animate={{
+                  y: 0,
+
+                  opacity: 1,
+                  transition: { delay: 1.2, type: "springy" },
+                }}
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.8 }}
+              >
                 <Image
-                  className="icon"
-                  src={profilePic}
-                  width="35"
-                  height="35"
+                  className={projectStyles.icon}
+                  src={websiteIcon}
+                  width="50"
+                  height="50"
                   alt="Picture of Developer"
                 />
-              </a>
+              </motion.a>
             </div>
           )}
         </div>
         {activeCard === 3 && (
-          <p style={{ color: "white", fontSize: "26px" }}>
-            My final project for my software development bootcamp! We were
-            challenged to work with a group of 3 other developers to create a
-            fullstack program using an api of our choice. Unfortunatly the other
-            people in the group ended up not doing the project and it is
-            currently only an impressive graphQL backend coded by me!
-          </p>
+          <p style={{ color: "white", fontSize: "26px" }}>Work In Progress!</p>
         )}
       </motion.div>
     </section>

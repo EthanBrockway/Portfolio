@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import { motion } from "framer-motion"
 export default function Navbar() {
   return (
     <header>
@@ -9,13 +9,31 @@ export default function Navbar() {
       <nav className="navbar">
         <ul>
           <li>
-            <Link href="/">About</Link>
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <Link href="/">About</Link>
+            </motion.div>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <Link href="/projects">Projects</Link>
+            </motion.div>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <Link href="/contact">Contact</Link>
+            </motion.div>
           </li>
         </ul>
       </nav>
