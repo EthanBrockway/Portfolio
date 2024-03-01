@@ -189,30 +189,6 @@ export default function Projects() {
                   animate={{
                     y: 0,
                     opacity: 1,
-                    transition: { delay: 0.5, type: "spring" },
-                  }}
-                  whileHover={{ scale: 1.2 }}
-                >
-                  Express
-                </motion.li>
-                <motion.li
-                  layout
-                  initial={{ y: -40, opacity: 0 }}
-                  animate={{
-                    y: 0,
-                    opacity: 1,
-                    transition: { delay: 0.7, type: "spring" },
-                  }}
-                  whileHover={{ scale: 1.2 }}
-                >
-                  C#
-                </motion.li>
-                <motion.li
-                  layout
-                  initial={{ y: -40, opacity: 0 }}
-                  animate={{
-                    y: 0,
-                    opacity: 1,
                     transition: { delay: 0.9, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
@@ -229,7 +205,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  Unity
+                  HTML
                 </motion.li>
                 <motion.li
                   layout
@@ -241,7 +217,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  MongoDB
+                  CSS
                 </motion.li>
               </ul>
             </div>
@@ -349,7 +325,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  C#
+                  graphQL
                 </motion.li>
                 <motion.li
                   layout
@@ -373,7 +349,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  Unity
+                  HTML
                 </motion.li>
                 <motion.li
                   layout
@@ -382,6 +358,30 @@ export default function Projects() {
                     y: 0,
                     opacity: 1,
                     transition: { delay: 1.3, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  CSS
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.5, type: "spring" },
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                >
+                  React
+                </motion.li>
+                <motion.li
+                  layout
+                  initial={{ y: -40, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 1.7, type: "spring" },
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
@@ -482,7 +482,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  Express
+                  React
                 </motion.li>
                 <motion.li
                   layout
@@ -494,7 +494,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  C#
+                  React
                 </motion.li>
                 <motion.li
                   layout
@@ -506,7 +506,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  JavaScript
+                  React
                 </motion.li>
                 <motion.li
                   layout
@@ -518,7 +518,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  Unity
+                  React
                 </motion.li>
                 <motion.li
                   layout
@@ -530,7 +530,7 @@ export default function Projects() {
                   }}
                   whileHover={{ scale: 1.2 }}
                 >
-                  MongoDB
+                  React
                 </motion.li>
               </ul>
             </div>
