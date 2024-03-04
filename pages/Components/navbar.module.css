@@ -1,0 +1,51 @@
+.menuImage {
+  display: none;
+}
+.dropbtn {
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  .navSection {
+    display: none;
+  }
+  .menuImage {
+    display: block;
+  }
+  .dropbtn {
+    background-color: transparent;
+    border-color: transparent;
+    display: block;
+  }
+  .dropbtn:hover .navSection {
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+    z-index: 2;
+    margin-right: 20px;
+  }
+  .dropdownContent {
+    z-index: 2;
+    position: absolute;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+    right: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 206, 206, 0.8);
+    gap: 15px;
+  }
+  .dropdownContent a {
+    background-color: white;
+    padding: 2px;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+  }
+  .dropdownContent a:hover {
+    background-color: grey;
+  }
+}

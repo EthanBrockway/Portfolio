@@ -167,6 +167,8 @@
     margin-right: 5rem;
     margin-left: 5rem;
     margin-top: 5rem;
+    z-index: -1;
+    position: relative;
   }
   .cardActive {
     grid-column: span 1;
@@ -192,5 +194,14 @@
   }
   .icon {
     margin: 2px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section {
+    margin: 5rem 1rem;
+  }
+  .cardActive p {
+    margin: 0px;
   }
 }

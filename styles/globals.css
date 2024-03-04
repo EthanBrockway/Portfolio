@@ -1,9 +1,8 @@
-html,
-body {
-  overflow: auto;
+html {
+  overflow: hidden;
 }
 body {
-  overflow: hidden;
+  overflow: auto;
   color: black;
   background-color: #efb700;
   background-image: url("../public/images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
@@ -35,10 +34,9 @@ header > h1 > a {
   text-decoration: none;
 }
 .portfolio-image {
-  margin-top: 1px;
   border-radius: 20px;
   margin-right: 20px;
-  margin-bottom: 1px;
+
   border-style: solid;
   border-color: black;
 }
@@ -90,11 +88,44 @@ a {
   color: black;
   text-decoration: none;
 }
+.mobile-portfolio-image {
+  display: none;
+}
 @media screen and (max-width: 1080px) {
   p {
     font-size: 18px;
   }
   .typewriter-h1 {
     font-size: 30px;
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portfolio-image {
+    display: none;
+  }
+  .mobile-portfolio-image {
+    display: block;
+    float: left;
+    border-radius: 20px;
+    margin-right: 20px;
+
+    border-style: solid;
+    border-color: black;
+  }
+  .typewriter-h1 {
+    font-size: 20px;
+    white-space: normal;
+  }
+  .container {
+    margin: 20px;
+  }
+  .icon-image {
+    width: 25px;
+    height: 25px;
+  }
+  .typewriter-h1 {
+    text-align: center;
+    margin-top: 0;
   }
 }

@@ -48,6 +48,13 @@ export default function AboutSection() {
               }}
             />
           </h1>
+          <Image
+            className="mobile-portfolio-image"
+            src={profilePic}
+            width="80"
+            height="100"
+            alt="Picture of Developer"
+          />
           <p>
             I have loved all things technology since before I can remember.
             Becoming a programmer has always been a dream of mine that I finally
