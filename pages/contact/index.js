@@ -56,7 +56,7 @@ export default function Contact() {
             id={contactStyles.inputField}
             placeholder="(123)-123-1234"
             title="Please enter valid phone number."
-            pattern="\(?([\d]{3})\)?[.\- ][\d]{3}[.\- ][\d]{4}"
+            pattern="\(?([\d]{3})\)?[.\- ]?[\d]{3}[.\- ]?[\d]{4}"
             name="phoneNumber"
           ></input>
         </div>
