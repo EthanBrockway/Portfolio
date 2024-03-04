@@ -21,11 +21,11 @@
   }
   .dropdown {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     margin-right: 20px;
   }
   .dropdownContent {
-    z-index: 2;
+    z-index: 30;
     position: absolute;
     border-radius: 10px;
     padding: 15px;

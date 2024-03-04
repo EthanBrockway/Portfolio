@@ -12,6 +12,7 @@ export default function Projects() {
     <section className={projectStyles.section}>
       {/* Flarpy bard */}
       <motion.div
+        role="button"
         layout
         draggable="false"
         transition={{
@@ -25,7 +26,11 @@ export default function Projects() {
             : projectStyles.cardIsInactive
         )}
         onClick={() => {
-          setActiveCard(0)
+          if (activeCard === 0) {
+            setActiveCard(-1)
+          } else {
+            setActiveCard(0)
+          }
         }}
         style={{
           boxShadow: "0.7rem 0.7rem 0 rgb(29, 28, 28)",
@@ -171,7 +176,11 @@ export default function Projects() {
             : projectStyles.cardIsInactive
         )}
         onClick={() => {
-          setActiveCard(1)
+          if (activeCard === 1) {
+            setActiveCard(-1)
+          } else {
+            setActiveCard(1)
+          }
         }}
         style={{
           boxShadow: "0.7rem 0.7rem 0 rgb(29, 28, 28)",
@@ -291,7 +300,11 @@ export default function Projects() {
             : projectStyles.cardIsInactive
         )}
         onClick={() => {
-          setActiveCard(2)
+          if (activeCard === 2) {
+            setActiveCard(-1)
+          } else {
+            setActiveCard(2)
+          }
         }}
         style={{
           boxShadow: "0.7rem 0.7rem 0 rgb(29, 28, 28)",
@@ -461,7 +474,11 @@ export default function Projects() {
             : projectStyles.cardIsInactive
         )}
         onClick={() => {
-          setActiveCard(3)
+          if (activeCard === 3) {
+            setActiveCard(-1)
+          } else {
+            setActiveCard(3)
+          }
         }}
         style={{
           boxShadow: "0.7rem 0.7rem 0 rgb(29, 28, 28)",
