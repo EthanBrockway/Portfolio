@@ -4,6 +4,9 @@
 .dropbtn {
   display: none;
 }
+.dropdownContent {
+  display: none;
+}
 @media screen and (max-width: 620px) {
   .navSection {
     display: none;
