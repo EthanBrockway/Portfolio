@@ -7,7 +7,7 @@ export default function Contact() {
       <h1>Contact Me!</h1>
 
       <form
-        action="https://formsubmit.co/ebrockway01@gmail.com"
+        action="https://formsubmit.com/ebrockway01@gmail.com"
         method="POST"
         id="form1"
         className={contactStyles.contactForm}
