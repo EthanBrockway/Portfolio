@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 export default function Contact() {
   return (
     <div className={contactStyles.container}>
-      <h1>Contact Me!</h1>
+      <h1>Contact Me!!</h1>
 
       <form
         action="https://formsubmit.com/ebrockway01@gmail.com"
